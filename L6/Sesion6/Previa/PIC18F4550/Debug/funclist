@@ -1,0 +1,6 @@
+_main: CODE, 244 0 44
+_LEDstop: CODE, 288 0 18
+_tc_int: CODE, 8 0 182
+__initialization: CODE, 306 0 4
+_pampallugues: CODE, 190 0 54
+Total: 302

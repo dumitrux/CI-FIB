@@ -1,0 +1,96 @@
+//lasPREVIO10
+#include <xc.h>
+#include <stdlib.h>
+#include <string.h>
+#include "config.h"
+#include "GLCD.h"
+#define _XTAL_FREQ 8000000
+ 
+volatile unsigned int state_changed = 0, select = 1;
+ 
+void configAD()
+{
+   TRISA = 0xFF;
+   TRISB = 0x00;
+   TRISD = 0x00;
+   
+   ADCON0 = 0x01; // Selects Channel AN0
+   ADCON1 = 0x0D; // RA0 and RA1 set as analog
+   ADCON2 = 0x24; // Left justified, TAD = 8, FOSC/4
+}  
+ 
+void config_interrupts()
+{
+   INTCONbits.GIE = 1; // Enable global interrupts
+   INTCONbits.PEIE = 1; // Enable peripheral interrupts
+   INTCON = 0b10100111;
+   RCONbits.IPEN = 1;
+}
+ 
+void config_timer0()
+{
+   T0CONbits.TMR0ON = 1; //Enable TMR0
+   T0CONbits.T08BIT = 0; //16-bit
+   T0CONbits.T0SE = 0;   //On rising edge
+   T0CONbits.PSA = 0;    //We choose prescale value
+}
+ 
+void interrupt change_AD(void)
+{
+   if (INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1) {
+      ADCON0bits.GO = 1;
+      while (GO == 1);
+      if (select == 1) {
+     select = 2;
+     state_changed = 1;
+     ADCON0 = 0x05;
+      }
+      else if (select == 2) {
+     select = 1;
+     state_changed = 2;
+     ADCON0 = 0x01;
+      }
+   }
+   INTCONbits.TMR0IF = 0;
+   return;
+}
+ 
+void main(void)
+{
+   configAD();
+   GLCDinit();
+   config_interrupts();
+   config_timer0();
+   setStartLine(0);
+   clearGLCD(0, 7, 0, 127);
+   writeTxt(0, 0, "RA0 = ");
+   writeTxt(2, 0, "RA1 = ");
+   while (1) {
+      if (state_changed == 1) {
+     float aux = (ADRESL >> 6) + (ADRESH << 2);
+     aux = (aux*5)/1023;
+     int integer_part = aux;
+     int decimal_part = (aux * 100);
+     decimal_part = decimal_part%100;
+     clearGLCD(0, 0, 36, 127);
+     writeNum(0, 36, integer_part);
+     putch(0, 42, '.');
+     writeNum(0, 48, decimal_part);
+     state_changed = 0;
+     INTCON = 0b10100111;
+      }
+      else if (state_changed == 2) {
+     float aux = (ADRESL >> 6) + (ADRESH << 2);
+     aux = (aux*5)/1023;
+     int integer_part = aux;
+     int decimal_part = aux * 100;
+     decimal_part = decimal_part%100;
+     clearGLCD(2, 2, 36, 127);
+     writeNum(2, 36, integer_part);
+     putch(2, 42, '.');
+     writeNum(2, 48, decimal_part);
+     state_changed = 0;
+     INTCON = 0b10100111;
+      }
+   }
+}

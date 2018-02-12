@@ -1,0 +1,139 @@
+/* Diseño en Proteus: http://i.imgur.com/k0qLkNh.jpg */
+ 
+/* Por encuesta */
+ 
+void main(void)
+{
+        TRISB = 0x00; // RB0..RB7 como salida
+       
+        TRISC = 0x00; // RC0 y RC1 como salida para ver los dos bits que faltan de ADRESH
+ 
+        while (1) {
+               
+         ADCON0bits.CHS3 = 0;
+       
+         ADCON0bits.CHS2 = 0;
+       
+        ADCON0bits.CHS1 = 0;
+       
+         ADCON0bits.CHS0 = 1; // Channel 1 (AN1)
+       
+        ADCON0bits.ADON = 1; // A/D converter module is enabled
+       
+        ADCON1bits.VCFG1 = 0; // VSS
+       
+        ADCON1bits.VCFG0 = 0; // VDD
+       
+        ADCON1bits.PCFG3 = 1;
+       
+        ADCON1bits.PCFG2 = 1;
+       
+        ADCON1bits.PCFG1 = 0;
+       
+        ADCON1bits.PCFG0 = 1; // D D D D D D D D D D D A A (AN1 analogico, AN0 tambien pero de rebote)
+       
+        ADCON2bits.ADFM = 1; // Right justified
+       
+         ADCON2bits.ADCS2 = 0;
+       
+         ADCON2bits.ADCS1 = 0;
+       
+        ADCON2bits.ADCS0 = 1; // FOSC/8 porque: fosc = 8 MHZ => Tosc = 0,125 us => 8 TOSC = 1 us >= 0,8 us
+       
+        ADCON2bits.ACQT2 = 0;
+       
+        ADCON2bits.ACQT1 = 1; // TAD >= 0,8 us, TACQ >= 2,45 us
+       
+        ADCON2bits.ACQT0 = 0; // 4 TAD porque: 3 TAD ya es >= 2,45 us, pero ha de ser 2,4,6,8,12,16 o 20
+       
+        ADCON0bits.GO_DONE = 1; // Start conversion
+       
+        while (ADCON0bits.GO_DONE == 1) Nop();
+       
+        PORTB = ADRESL;
+       
+        PORTC = ADRESH;
+       
+    }
+       
+}
+ 
+/* Por interrupcion */
+ 
+void interrupt AnaltoDick(void) {
+       
+        if (PIR1bits.ADIF) {
+               
+                PIR1bits.ADIF = 0;
+               
+                PORTB = ADRESL;
+       
+                PORTC = ADRESH;
+ 
+                ADCON0bits.CHS3 = 0;
+       
+                ADCON0bits.CHS2 = 0;
+       
+                ADCON0bits.CHS1 = 0;
+       
+                ADCON0bits.CHS0 = 1; // Channel 1 (AN1)
+       
+                ADCON0bits.ADON = 1; // A/D converter module is enabled
+       
+                ADCON1bits.VCFG1 = 0; // VSS
+       
+                ADCON1bits.VCFG0 = 0; // VDD
+       
+                ADCON1bits.PCFG3 = 1;
+       
+                ADCON1bits.PCFG2 = 1;
+       
+                ADCON1bits.PCFG1 = 0;
+       
+                ADCON1bits.PCFG0 = 1; // D D D D D D D D D D D A A (AN1 analogico, AN0 tambien pero de rebote)
+       
+                ADCON2bits.ADFM = 1; // Right justified
+       
+                ADCON2bits.ADCS2 = 0;
+       
+                ADCON2bits.ADCS1 = 0;
+       
+                ADCON2bits.ADCS0 = 1; // FOSC/8 porque: fosc = 8 MHZ => Tosc = 0,125 us => 8 TOSC = 1 us >= 0,8 us
+       
+                ADCON2bits.ACQT2 = 0;
+       
+                ADCON2bits.ACQT1 = 1; // TAD >= 0,8 us, TACQ >= 2,45 us
+       
+                ADCON2bits.ACQT0 = 0; // 4 TAD porque: 3 TAD ya es >= 2,45 us, pero ha de ser 2,4,6,8,12,16 o 20
+       
+                ADCON0bits.GO_DONE = 1; // Start conversion
+               
+        }
+       
+}
+ 
+void main(void)
+{
+        TRISB = 0x00; // RB0..RB7 como salida
+       
+        TRISC = 0x00; // RC0 y RC1 como salida para ver los dos bits que faltan de ADRESH
+       
+        INTCONbits.GIE = 1; // Enables all interrupts
+       
+        INTCONbits.PEIE = 1; // Enables peripheral interrupts
+       
+        PIE1bits.ADIE = 1; // Enables the A/D interrupt
+ 
+        ADCON0bits.CHS3 = 0;
+ 
+        ...
+ 
+        while (1);
+}
+ 
+// Con 8 leds en vez de 10: ADCON2bits.ADFM = 0; (left justified) y PORTB = ADRESH; (despreciamos los dos de
+// menos peso que quedaran en la parte alta del ADRESL y nos quedamos con los 8 de mas peso en ADRESH)
+ 
+// 10 bits (0 al 1023) para representar como mucho 5 V => 5/1024 = 4.88 * 10^-3 V cada incremento de la palabra
+// digital o numero en binario. ej.- 0.05 V => 0.05/4.88*10^-3 = 10.24 ˜ 10, en binario 1010 => se encenderan los
+// leds 2 y 4
