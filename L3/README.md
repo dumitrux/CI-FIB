@@ -1,5 +1,5 @@
 ##HARDWARE
-<p>
+<code>
 ; DEFINITIONS
 #include p18f4550.inc ; Include register definition file
  config PLLDIV = 1
@@ -33,11 +33,11 @@ mentre
 Loop
  goto Loop
  END
-</p>
+</code>
 
 <img src="L3-hardware.jpg">
 ##SOFTWARE
-<p>
+<code>
 ; DEFINITIONS
 #include p18f4550.inc ; Include register definition file
  config PLLDIV = 1
@@ -70,6 +70,6 @@ mentre
 Loop
  goto Loop
  END
-</p>
+</code>
 
 <img src="L3-software.jpg">
