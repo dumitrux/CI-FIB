@@ -1,10 +1,8 @@
 # Muntatge d'un microcontrolador sobre protoboard
 
-## Laboratori previo hardware
+## Laboratori previo
 - [Source code hardware](#source-code-hardware)
 - [Schematic capture hardware](#schematic-capture-hardware)
-
-## Laboratori previo software
 - [Source code software](#source-code-software)
 - [Schematic capture software](#schematic-capture-software)
 
