@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Source code](#sorce code)
-- [Schematic capture](#schematic capture)
+- [Source code](#sorce_code)
+- [Schematic capture](#schematic_capture)
 
 
 ## Source code
