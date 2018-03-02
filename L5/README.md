@@ -1,8 +1,12 @@
 # Ports d'entrada/sortida
 
 ## Laboratori
-- [Source code](#source-code)
-- [Schematic capture](#schematic-capture)
+- [Source code previ](#source-code-previ)
+- [Schematic capture previ](#schematic-capture)
+- [Source code sessió](#source-code-sessió)
+- [Schematic capture sessió](#schematic-capture-sessió)
+- [Source code sobre](#source-code)
+- [Schematic capture sobre](#schematic-capture-sobre)
 
 ### Source code previ
 
@@ -67,7 +71,7 @@ void main (void) {
 
 ![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
 
-### Source code previ
+### Source code sobre
 
 ```
 #include <xc.h>
@@ -139,7 +143,7 @@ void main (void) {
 }
 ```
 
-### Schematic capture sessió
+### Schematic capture sobre
 
 ![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
 
