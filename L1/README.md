@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Source code](#sorce-code)
+- [Source code](#source-code)
 - [Schematic capture](#schematic-capture)
 
 
