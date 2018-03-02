@@ -1,11 +1,8 @@
 # Introducció a les eines de disseny i simulació de circuits electrònics
 
-## Table of Contents
-- [Laboratori sessió](#laboratori-sessio)
--- [Source code](#source-code)
--- [Schematic capture](#schematic-capture)
-
 ## Laboratori sessió
+- [Source code](#source-code)
+- [Schematic capture](#schematic-capture)
 
 ### Source code
 
