@@ -1,12 +1,13 @@
 # Introducció a les eines de disseny i simulació de circuits electrònics
 
 ## Table of Contents
+- [Laboratori sessió](#laboratori-sessio)
+      - [Source code](#source-code)
+      - [Schematic capture](#schematic-capture)
 
-- [Source code](#source-code)
-- [Schematic capture](#schematic-capture)
+## Laboratori sessió
 
-
-## Source code
+### Source code
 
 ```
 ;====================================================================
@@ -50,6 +51,6 @@ Loop
 ```
 
 
-## Schematic capture
+### Schematic capture
 
 ![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
