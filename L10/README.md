@@ -3,7 +3,7 @@
 ## Laboratori
 - [Source code previ](#source-code-previ)
 - [Source code sobre](#source-code-sobre)
-- [Schematic capture sobre](#schematic-capture)
+- [Schematic capture](#schematic-capture)
 
 ### Source code previ
 
