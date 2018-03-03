@@ -2,7 +2,7 @@
 
 ## Laboratori
 - [Source code previ](#source-code-previ)
-- [Schematic capture previ&sessió](#schematic-capture-previ&sessió)
+- [Schematic capture previ&sessió](#schematic-capture-previ-sessió)
 - [Source code sessió](#source-code-sessió)
 - [Source code sobre](#source-code-sobre)
 - [Schematic capture sobre](#schematic-capture-sobre)
