@@ -1,6 +1,7 @@
 # Convertidor A/D
 
 ## Laboratori
+
 - [Source code previ](#source-code-previ)
 - [Source code sobre](#source-code-sobre)
 - [Schematic capture sobre](#schematic-capture)
@@ -58,7 +59,8 @@ double vangle;
 
 
    void calculaDistancia(){
-      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1; //LECTURA DEL CANAL 1 -> AN1
+      //LECTURA DEL CANAL 1 -> AN1
+      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1; 
       GO = 1;
       while(GO);//Es baixarà quan s'hagi fet l'adquisició
       int n = ADRESH & 0x03; //ignorem els bits de menys pes
@@ -68,7 +70,8 @@ double vangle;
       vdist = (distancia/1023.)*5000;
       }
    void calculaAngle(){
-      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 0; //LECTURA DEL CANAL 0 -> AN0
+      //LECTURA DEL CANAL 0 -> AN0
+      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 0;
       GO = 1;
       while(GO);//Es baixarà quan s'hagi fet l'adquisició
       int n = ADRESH;	//ignorem els bits de menys pes
@@ -166,7 +169,8 @@ double vangle;
 
 
    void calculaDistancia(){
-      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1; //LECTURA DEL CANAL 1 -> AN1
+       //LECTURA DEL CANAL 1 -> AN1
+      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1;
       GO = 1;
       while(GO);//Es baixarà quan s'hagi fet l'adquisició
       int n = ADRESH & 0x03; //ignorem els bits de menys pes
@@ -176,7 +180,8 @@ double vangle;
       vdist = (distancia/1023.)*5000;
       }
    void calculaAngle(){
-      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 0; //LECTURA DEL CANAL 0 -> AN0
+      //LECTURA DEL CANAL 0 -> AN0
+      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 0;
       GO = 1;
       while(GO);//Es baixarà quan s'hagi fet l'adquisició
       int n = ADRESH;	//ignorem els bits de menys pes
