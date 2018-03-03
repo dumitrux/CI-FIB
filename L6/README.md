@@ -2,7 +2,7 @@
 
 ## Laboratori
 - [Source code previ](#source-code-previ)
-- [Schematic capture previ&sessió](#schematic-capture-previ-sessió)
+- [Schematic capture previ and sessió](#schematic-capture-previ-and-sessió)
 - [Source code sessió](#source-code-sessió)
 - [Source code sobre](#source-code-sobre)
 - [Schematic capture sobre](#schematic-capture-sobre)
@@ -58,7 +58,7 @@ void main(void){
  }
 ```
 
-### Schematic capture previ&sessió
+### Schematic capture previ and sessió
 
 ![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
 
