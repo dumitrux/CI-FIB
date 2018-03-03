@@ -194,4 +194,4 @@ void main(void){
 
 ### Schematic capture sobre
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-previ%26sessio.JPG)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-sobre.JPG)
