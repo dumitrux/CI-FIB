@@ -1,6 +1,7 @@
 # Adquisició i Transmissió de dades (A/D i línia sèrie)
 
 ## Laboratori
+
 - [Source code previ](#source-code-previ)
 - [Source code sobre](#source-code-sobre)
 - [Schematic capture](#schematic-capture)
@@ -388,4 +389,4 @@ void main(){
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L10/L10.JPG)
