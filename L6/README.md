@@ -1,6 +1,7 @@
 # Interrupcions
 
 ## Laboratori
+
 - [Source code previ](#source-code-previ)
 - [Schematic capture previ and sessió](#schematic-capture-previ-and-sessió)
 - [Source code sessió](#source-code-sessió)
@@ -60,7 +61,7 @@ void main(void){
 
 ### Schematic capture previ and sessió
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-previ%26sessio.JPG)
 
 ### Source code sessió
 
@@ -193,4 +194,4 @@ void main(void){
 
 ### Schematic capture sobre
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-previ%26sessio.JPG)
