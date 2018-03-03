@@ -4,7 +4,7 @@
 
 - [Source code previ](#source-code-previ)
 - [Source code sobre](#source-code-sobre)
-- [Schematic capture sobre](#schematic-capture)
+- [Schematic capture](#schematic-capture)
 
 ### Source code previ
 
@@ -249,3 +249,7 @@ Dist:
 */
 
 ```
+
+### Schematic capture
+
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L9/L9.JPG)
