@@ -104,4 +104,4 @@ bucle
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/srmeeseeks-READMEs/L2/L2.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L2/L2.jpg)
