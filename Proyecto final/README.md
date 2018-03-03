@@ -1,8 +1,10 @@
 # Projecte Computadors encastats a l'automòbil
 
 ## Laboratori
-- [Source code previ](#source-code)
-- [Schematic capture previ](#schematic-capture)
+- [Source code](#source-code)
+- [Schematic capture](#schematic-capture)
+
+### Source code
 
 ```
 #include <xc.h>
@@ -232,6 +234,6 @@ void main(void){
 }
 ```
 
-### Schematic capture previ
+### Schematic capture
 
 ![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
