@@ -111,28 +111,6 @@ void main(void){
 	 for(int i = 0; i < 100; ++i) __delay_ms(5);
       }
 }
-
-/* TAULA DE VALORS
-Angulo:
-
-	Minimo: 0 grados - 557mV
-	
-	Int1: 50 grados - 1334mv
-	Int2: 90 grados - 1901mV
-	Int3: 140 grados - 2756mv
-
-	Maximo: 180 grados - 3616mv
-
-Dist:
-
-	Minimo: 4 cm - 2605mV
-	
-	Int1: 8 cm - 1412mV
-	Int2: 12 cm - 943mv
-	Int3: 16 cm - 698mv
-
-	Maximo: 20 cm - 532mV
-	*/
 ```
 
 ### Source code sobre
