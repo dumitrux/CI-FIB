@@ -1,6 +1,6 @@
 # GLCD
 
-Versión de la GLCD del Q1 del 2017
+Versión de la GLCD del 2017-Q1
 
 ## Table of Contents
 
