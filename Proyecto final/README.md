@@ -92,7 +92,8 @@ void configPIC() {
 double distancia;
 
 void calculaDistancia(){
-      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1; //LECTURA DEL CANAL 1 -> AN1
+      //LECTURA DEL CANAL 1 -> AN1
+      ADCON0bits.CHS3 = 0; ADCON0bits.CHS2 = 0; ADCON0bits.CHS1 = 0; ADCON0bits.CHS0 = 1;
       GO = 1;
       while(GO);//Es baixarà quan s'hagi fet l'adquisició
       int n = ADRESH;
@@ -236,4 +237,4 @@ void main(void){
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/Proyecto%20final/Proyecto%20final.JPG)
