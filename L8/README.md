@@ -1,6 +1,7 @@
 # PWM (Modulació per amplada de pols)
 
 ## Laboratori
+
 - [Source code previ](#source-code-previ)
 - [Source code sessió](#source-code-sessió)
 - [Source code sobre](#source-code-sobre)
@@ -178,4 +179,4 @@ int main(void)
 
 ### Schematic capture previ and sessió
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L1/L1.jpg)
+![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L8/L8.JPG)
