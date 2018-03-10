@@ -237,4 +237,4 @@ void main(void){
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/Proyecto%20final/Proyecto%20final.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/Proyecto%20final/Proyecto%20final.JPG)
