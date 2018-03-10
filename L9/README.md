@@ -252,4 +252,4 @@ Dist:
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L9/L9.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L9/L9.JPG)
