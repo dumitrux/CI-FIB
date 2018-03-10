@@ -33,7 +33,7 @@ void main (void) {
 
 ### Schematic capture previ
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L5/L5-previ.jpg)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L5/L5-previ.jpg)
 
 ### Source code sessió
 
@@ -69,7 +69,7 @@ void main (void) {
 
 ### Schematic capture sessió
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L5/L5-sessio.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L5/L5-sessio.JPG)
 
 ### Source code sobre
 
@@ -145,5 +145,5 @@ void main (void) {
 
 ### Schematic capture sobre
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L5/L5-sobre.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L5/L5-sobre.JPG)
 
