@@ -61,7 +61,7 @@ void main(void){
 
 ### Schematic capture previ and sessió
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-previ%26sessio.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L6/L6-previ%26sessio.JPG)
 
 ### Source code sessió
 
@@ -194,4 +194,4 @@ void main(void){
 
 ### Schematic capture sobre
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L6/L6-sobre.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L6/L6-sobre.JPG)
