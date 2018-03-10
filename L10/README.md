@@ -389,4 +389,4 @@ void main(){
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L10/L10.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L10/L10.JPG)
