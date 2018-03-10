@@ -61,4 +61,4 @@ void main(void)
 
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L4/GLCD.jpg)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L4/GLCD.jpg)
