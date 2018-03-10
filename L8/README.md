@@ -179,4 +179,4 @@ int main(void)
 
 ### Schematic capture previ and sessió
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L8/L8.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L8/L8.JPG)
