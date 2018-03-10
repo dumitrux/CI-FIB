@@ -46,7 +46,7 @@ Loop
 
 ### Schematic capture hardware
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L3/L3-hardware.jpg)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L3/L3-hardware.jpg)
 
 ### Source code software
 
@@ -87,4 +87,4 @@ Loop
 
 ### Schematic capture software
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L3/L3-software.jpg)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L3/L3-software.jpg)
