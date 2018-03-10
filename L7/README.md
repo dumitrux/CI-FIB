@@ -119,4 +119,4 @@ void main(void){
 ```
 ### Schematic capture
 
-![Screenshot](https://github.com/srmeeseeks/CI-FIB/blob/master/L7/L7-previ.JPG)
+![Screenshot](https://github.com/dumitrux/CI-FIB/blob/master/L7/L7-previ.JPG)
